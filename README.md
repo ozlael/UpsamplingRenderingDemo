@@ -1,11 +1,11 @@
 # Upsampling Rendering Demo
 
 Upsampling Rendering is old school but common trick for low end devices, not only for mobiles but also PC. Since many low-end devices have very high resolution but GPU power is still low, Pixel processing is still heavy.
-If you want to keep high quality look&feel for low-en devices, one of simplest way is reducing resolution. You may simply implement as using Screen.SetResolution(). But, users easily can recognize that is is low resolution because entire rendering results are low resolution. 
+If you want to keep high quality look&feel for low-en devices, one of simplest way is reducing resolution. You may simply implement as using Screen.SetResolution(). But, users easily can recognize that is is low resolution because entire rendering results are low resolution. This demo's key trick is that the overay UI is full resolution.
 
 ## Implementation
 
-This demo's key trick is that the overay UI is full resolution. steps are :
+Steps are :
 1. generate a low resolution render target (aka RenderTexture).
 2. render 3D scenes into the render target.
 3. upscale render the render target into current backbuffer.
